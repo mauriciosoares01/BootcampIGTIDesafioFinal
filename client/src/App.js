@@ -77,10 +77,10 @@ export default function App() {
     let incomeAcc = 0;
     let expenseAcc = 0;
     transactions.forEach((element) => {
-      if (element.category === "Receita") {
-        incomeAcc += element.value;
-      } else {
+      if (element.type === "-") {
         expenseAcc += element.value;
+      } else {
+        incomeAcc += element.value;
       }
     });
     setEntry(transactions.length);
