@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://mauricio-bootcamp-igti-final.herokuapp.com/api";
+const API_URL = "http://localhost:3001/api";
 
 async function getTransactions(period) {
   try {
